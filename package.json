@@ -1,0 +1,54 @@
+{
+  "name": "template-directory",
+  "version": "0.0.0",
+  "description": "copy a template directory with variables injected",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-dev example",
+    "test:deps": "dependency-check . && dependency-check . --extra --no-dev -i es2040",
+    "test:lint": "standard",
+    "test:node": "NODE_ENV=test run-default tape test/*.js --",
+    "test:coverage": "NODE_ENV=test nyc npm run test:node",
+    "test:coverage:report": "nyc report --reporter=lcov npm run test:node",
+    "test": "npm-run-all -s test:node test:lint test:deps"
+  },
+  "browserify": {
+    "transform": [
+      "es2040"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahdinosaur/template-directory.git"
+  },
+  "keywords": [],
+  "author": "Mikey <michael.williams@enspiral.com> (http://dinosaur.is)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ahdinosaur/template-directory/issues"
+  },
+  "homepage": "https://github.com/ahdinosaur/template-directory#readme",
+  "devDependencies": {
+    "cat-names": "^1.0.2",
+    "dependency-check": "^2.7.0",
+    "node-dev": "^3.1.3",
+    "npm-run-all": "^4.0.1",
+    "nyc": "^10.1.2",
+    "run-default": "^1.0.0",
+    "standard": "^8.6.0",
+    "tape": "^4.6.3"
+  },
+  "dependencies": {
+    "es2040": "^1.2.3",
+    "minimatch": "^3.0.3",
+    "pixie": "^1.1.0",
+    "pull-file": "^1.0.0",
+    "pull-fs": "^1.1.6",
+    "pull-paramap": "^1.2.1",
+    "pull-split": "^0.2.0",
+    "pull-stream": "^3.5.0",
+    "pull-utf8-decoder": "^1.0.2",
+    "pull-write-file": "^0.2.4",
+    "typeof-is": "^1.0.1"
+  }
+}

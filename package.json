@@ -1,6 +1,6 @@
 {
   "name": "template-directory",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "copy a template directory with variables injected",
   "main": "index.js",
   "scripts": {

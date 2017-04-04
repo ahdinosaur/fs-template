@@ -1,18 +1,18 @@
-# template-directory
+# fs-template
 
 copy a template directory with variables injected
 
 implemented using [pull streams](https://pull-stream.github.io/) for every async operation, so is very fast and usess minimal memory. :horse_racing:
 
 ```shell
-npm install --save template-directory
+npm install --save fs-template
 ```
 
 ## usage
 
-### `templateDirectory = require('template-directory')`
+### `template = require('fs-template')`
 
-### `templateDirectory(options, (err) => {})`
+### `template(options, (err) => {})`
 
 `options` is an object of the following:
 

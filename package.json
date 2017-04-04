@@ -1,5 +1,5 @@
 {
-  "name": "template-directory",
+  "name": "fs-template",
   "version": "1.0.0",
   "description": "copy a template directory with variables injected",
   "main": "index.js",
@@ -19,15 +19,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ahdinosaur/template-directory.git"
+    "url": "git+https://github.com/ahdinosaur/fs-template.git"
   },
   "keywords": [],
   "author": "Mikey <michael.williams@enspiral.com> (http://dinosaur.is)",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/ahdinosaur/template-directory/issues"
+    "url": "https://github.com/ahdinosaur/fs-template/issues"
   },
-  "homepage": "https://github.com/ahdinosaur/template-directory#readme",
+  "homepage": "https://github.com/ahdinosaur/fs-template#readme",
   "devDependencies": {
     "cat-names": "^1.0.2",
     "dependency-check": "^2.7.0",

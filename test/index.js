@@ -1,8 +1,8 @@
 const test = require('tape')
 
-const templateDirectory = require('../')
+const fsTemplate = require('../')
 
-test('template-directory', function (t) {
-  t.ok(templateDirectory, 'module is require-able')
+test('fs-template', function (t) {
+  t.ok(fsTemplate, 'module is require-able')
   t.end()
 })

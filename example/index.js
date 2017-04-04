@@ -1,9 +1,9 @@
 const Path = require('path')
-const templateDirectory = require('../')
+const template = require('../')
 
 const vars = require('./vars')
 
-templateDirectory({
+template({
   source: Path.join(__dirname, 'source'),
   target: Path.join(__dirname, 'target'),
   vars,

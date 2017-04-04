@@ -19,9 +19,9 @@ const pullFs = require('pull-fs')
 const { Minimatch } = require('minimatch')
 const Template = require('pixie')
 
-module.exports = templateDirectory
+module.exports = fsTemplate
 
-function templateDirectory (options = {}, cb) {
+function fsTemplate (options = {}, cb) {
   const {
     source,
     target,

@@ -125,7 +125,7 @@ function renderTemplates ({ vars, open, close }) {
     const contents = pull(
       file.contents,
       pullUtf8Decoder(),
-      pullSplit(),
+      pullSplit(null, null, null, true),
       pullMap(renderTemplate({ vars, open, close })),
       pullMap(str => str + '\n'),
       pullMap(Buffer.from)
